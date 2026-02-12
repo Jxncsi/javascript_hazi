@@ -26,7 +26,6 @@ function szinez() {
     //Végigmegyünk minden elemen és a listában megadott színűre állítjuk a backgroundColor-t
     for (let index = 0; index < ossz_li_elem.length; index++) {
         let seged = nth_first - 1;
-        console.log((index - seged) % nth_n)
         if (index >= seged && (index - seged) % nth_n == 0) {
             ossz_li_elem[index].style.backgroundColor = szinek_listaja;
         }
